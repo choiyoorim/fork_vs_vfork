@@ -4,7 +4,7 @@ node {
         git 'https://github.com/choiyoorim/fork_vs_vfork.git
     }
     stage('Build image') {
-        app = docker.build("choiyoorim/prbasedtest")
+        app = docker.build("choiyoorim/test")
     }
     stage('Test image') {
         app.inside {
