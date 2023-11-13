@@ -12,7 +12,7 @@ node {
         }
     }
     stage('Push image') {
-        docker.withRegistry('https://registry.hub.docker.com', 'choiyoorim') {
+        docker.withRegistry('https://registry.hub.docker.com', 'yulim3839') {
            app.push("${env.BUILD_NUMBER}")
            app.push("latest")
         }
